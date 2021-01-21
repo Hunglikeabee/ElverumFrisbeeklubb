@@ -101,11 +101,11 @@ li {
 }
 
 .hamburger {
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
   display: none;
   right: 35px;
-  top: 173px;
+  top: 115px;
 }
 
 .dropdown {
@@ -144,13 +144,11 @@ main {
 
 .mainindex {
   max-width: 1200px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 30px 10px 0px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1fr);
   justify-self: center;
-  margin: 2vw;
 }
 
 .mainindex h2 {
@@ -175,6 +173,10 @@ main {
   height: 100%;
   margin: 0;
   max-height: 160px;
+}
+
+.minipicsligg {
+  max-width: 300px;
 }
 
 .minipics:hover {
@@ -213,6 +215,15 @@ footer {
 @media only screen and (max-width: 730px) {
   h1 {
     font-size: 26px;
+  }
+
+  nav {
+    height: 50px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 60px;
   }
 
   ul {
