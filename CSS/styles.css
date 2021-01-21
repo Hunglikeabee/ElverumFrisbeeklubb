@@ -42,14 +42,14 @@ body {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--blue);
+  background-color: var(--white);
   padding-bottom: 140px;
 }
 
 /*Header*/
 
 header {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .section__logo {
@@ -62,12 +62,14 @@ header {
 
 .section__logo h1 {
   align-self: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .logo {
   padding: 10px;
   height: 150px;
-  width: auto;
+  width: 85px;
   background-color: white;
   align-items: center;
 }
@@ -100,10 +102,10 @@ li {
 
 .hamburger {
   font-size: 40px;
-  position: fixed;
-  right: 30px;
-  top: 173px;
+  position: absolute;
   display: none;
+  right: 35px;
+  top: 173px;
 }
 
 .dropdown {
@@ -136,6 +138,10 @@ a:hover {
 
 /* Main */
 
+main {
+  margin: 0 auto;
+}
+
 .mainindex {
   max-width: 1200px;
   margin-left: 10px;
@@ -144,7 +150,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1fr);
   justify-self: center;
-  margin: 40px;
+  margin: 2vw;
 }
 
 .mainindex h2 {
@@ -160,12 +166,15 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 170px 170px 170px;
+  justify-items: right;
+  margin-left: 1vw;
 }
 
 .minipics {
   width: auto;
-  height: 160px;
+  height: 100%;
   margin: 0;
+  max-height: 160px;
 }
 
 .minipics:hover {
@@ -202,6 +211,10 @@ footer {
 }
 
 @media only screen and (max-width: 730px) {
+  h1 {
+    font-size: 26px;
+  }
+
   ul {
     display: none;
   }
@@ -211,6 +224,6 @@ footer {
   }
 
   .mineatures {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
